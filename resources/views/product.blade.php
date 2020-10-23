@@ -37,17 +37,17 @@
     <div class="product-section container">
         <div>
             <div class="product-section-image">
-                <img src="/img/macbook-pro.png" alt="product" class="active" id="currentImage">
+                <img src="{{ productImage($product->image) }}" alt="product" class="active" id="currentImage">
             </div>
             <div class="product-section-images">
                 <div class="product-section-thumbnail selected">
-                    <img src="/img/macbook-pro.png" alt="product">
+                    <img src="{{ productImage($product->image) }}" alt="product">
                 </div>
 
                 @if ($product->images)
                     @foreach (json_decode($product->images, true) as $image)
                         <div class="product-section-thumbnail">
-                            <img src="/img/macbook-pro.png" alt="product">
+                            <img src="{{ productImage($image) }}" alt="product">
                         </div>
                     @endforeach
                 @endif

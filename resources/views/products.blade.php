@@ -46,7 +46,7 @@
                 @forelse ($products as $product)
                     <div class="product">
                         <a href="{{ route('product.show', $product->slug) }}">
-                            <img src="{{ asset('img/'.$product->image) }}" alt="product"></a>
+                            <img src="{{ productImage($product->image) }}" alt="product"></a>
                         <a href="{{ route('product.show', $product->slug) }}">
                             <div class="product-name">{{ $product->name }}</div>
                         </a>

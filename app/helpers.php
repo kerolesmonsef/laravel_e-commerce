@@ -19,7 +19,13 @@ function setActiveCategory($slug, $output = 'active')
 
 function productImage($path)
 {
-    return $path && file_exists('storage/'.$path) ? asset('storage/'.$path) : asset('img/not-found.jpg');
+    if (file_exists('storage/' . $path)) {
+        return asset('storage/' . $path);
+    } elseif (file_exists('img/' . $path)) {
+        return asset('img/' . $path);
+    } else {
+        asset('img/not-found.jpg');
+    }
 }
 
 function getNumbers()

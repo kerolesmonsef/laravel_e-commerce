@@ -27,7 +27,7 @@
                         <div class="cart-table-row">
                             <div class="cart-table-row-left">
                                 <a href="{{ route('product.show', ['product'=>$item->model->slug]) }}"><img
-                                        src="/img/macbook-pro.png" alt="item" class="cart-table-img"></a>
+                                        src="{{ productImage($item->model->image) }}" alt="item" class="cart-table-img"></a>
                                 <div class="cart-item-details">
                                     <div class="cart-table-item"><a
                                             href="{{ route('product.show', $item->model->slug) }}">{{ $item->model->name }}</a>
@@ -142,7 +142,7 @@
                         <div class="cart-table-row">
                             <div class="cart-table-row-left">
                                 <a href="{{ route('product.index', $item->model->slug) }}"><img
-                                        src="/img/macbook-pro.png" alt="item"
+                                        src="{{ productImage($item->model->image) }}" alt="item"
                                         class="cart-table-img"></a>
                                 <div class="cart-item-details">
                                     <div class="cart-table-item"><a
