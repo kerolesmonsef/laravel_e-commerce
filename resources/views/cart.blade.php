@@ -16,21 +16,7 @@
 
     <div class="cart-section container">
         <div>
-            @if (session()->has('success_message'))
-                <div class="alert alert-success">
-                    {{ session()->get('success_message') }}
-                </div>
-            @endif
 
-            @if(count($errors) > 0)
-                <div class="alert alert-danger">
-                    <ul>
-                        @foreach ($errors->all() as $error)
-                            <li>{{ $error }}</li>
-                        @endforeach
-                    </ul>
-                </div>
-            @endif
 
             @if (Cart::count() > 0)
 
@@ -79,7 +65,7 @@
                                         </select>
                                     </form>
                                 </div>
-                                <div>{{ ($item->subtotal) }}</div>
+                                <div>$ {{ ($item->subtotal) }}</div>
                             </div>
                         </div> <!-- end cart-table-row -->
                     @endforeach
@@ -122,21 +108,21 @@
                             <span class="cart-totals-total">Total</span>
                         </div>
                         <div class="cart-totals-subtotal">
-                            {{ (Cart::subtotal()) }} <br>
+                            $ {{ (Cart::subtotal()) }} <br>
                             @if (session()->has('coupon'))
-                                {{ ($discount) }} <br>&nbsp;<br>
+                                $ {{ ($discount) }} <br>&nbsp;<br>
                                 <hr>
-                                {{ ($newSubtotal) }} <br>
+                                $ {{ ($newSubtotal) }} <br>
                             @endif
-                            {{ Cart::tax() }} <br>
-                            <span class="cart-totals-total">{{ Cart::total() }}</span>
+                            $ {{ Cart::tax() }} <br>
+                            <span class="cart-totals-total">$ {{ Cart::total() }}</span>
                         </div>
                     </div>
                 </div> <!-- end cart-totals -->
 
                 <div class="cart-buttons">
                     <a href="{{ route('product.index') }}" class="button">Continue Shopping</a>
-                    <a href="{{-- route('checkout.index') --}}" class="button-primary">Proceed to Checkout</a>
+                    <a href="{{ route('checkout.index') }}" class="button-primary">Proceed to Checkout</a>
                 </div>
 
             @else
@@ -167,11 +153,11 @@
                             </div>
                             <div class="cart-table-row-right">
                                 <div class="cart-table-actions">
-                                    <form action="{{ route('saveForLater.destroy', $item->rowId) }}" method="POST">
+                                    <form action="{{ route('cart.destroy', ['cart'=>$item->rowId,'type'=>'saveForLater']) }}" method="POST">
                                         {{ csrf_field() }}
                                         {{ method_field('DELETE') }}
 
-                                        <button type="submit" class="cart-options">Remove</button>
+                                        <button type="submit" class="cart-options" style="color: red;">Remove</button>
                                     </form>
 
                                     <form action="{{ route('saveForLater.switchToCart', $item->rowId) }}" method="POST">

@@ -14,40 +14,30 @@
         <span>Shop</span>
     @endcomponent
 
-    <div class="container">
-        @if (session()->has('success_message'))
-            <div class="alert alert-success">
-                {{ session()->get('success_message') }}
-            </div>
-        @endif
-
-        @if(count($errors) > 0)
-            <div class="alert alert-danger">
-                <ul>
-                    @foreach ($errors->all() as $error)
-                        <li>{{ $error }}</li>
-                    @endforeach
-                </ul>
-            </div>
-        @endif
-    </div>
 
     <div class="products-section container">
         <div class="sidebar">
             <h3>By Category</h3>
             <ul>
-{{--                @foreach ($categories as $category)--}}
-{{--                    <li class="{{ setActiveCategory($category->slug) }}"><a href="{{ route('product.index', ['category' => $category->slug]) }}">{{ $category->name }}</a></li>--}}
-{{--                @endforeach--}}
+                <li class="{{ !request('category') ? "active" : "" }}">
+                    <a href="{{ route('product.index') }}">All Categories</a>
+                </li>
+                @foreach ($categories as $category)
+                    <li class="{{ setActiveCategory($category->slug) }}">
+                        <a href="{{ route('product.index', ['category' => $category->slug]) }}">{{ $category->name }}</a>
+                    </li>
+                @endforeach
             </ul>
         </div> <!-- end sidebar -->
         <div>
             <div class="products-header">
-                <h1 class="stylish-heading">{{ $categoryName ?? "categoryName" }}</h1>
+                <h1 class="stylish-heading">{{ $selectedCategory->name ?? "All Categories" }}</h1>
                 <div>
                     <strong>Price: </strong>
-                    <a href="{{ route('product.index', ['category'=> request()->category, 'sort' => 'low_high']) }}">Low to High</a> |
-                    <a href="{{ route('product.index', ['category'=> request()->category, 'sort' => 'high_low']) }}">High to Low</a>
+                    <a href="{{ route('product.index', ['category'=> request('category'), 'sort' => 'low_high']) }}">Low
+                        to High</a> |
+                    <a href="{{ route('product.index', ['category'=> request('category'), 'sort' => 'high_low']) }}">High
+                        to Low</a>
 
                 </div>
             </div>
@@ -56,8 +46,10 @@
                 @forelse ($products as $product)
                     <div class="product">
                         <a href="{{ route('product.show', $product->slug) }}">
-                            <img src="/img/macbook-pro.png" alt="product"></a>
-                        <a href="{{ route('product.show', $product->slug) }}"><div class="product-name">{{ $product->name }}</div></a>
+                            <img src="{{ asset('img/'.$product->image) }}" alt="product"></a>
+                        <a href="{{ route('product.show', $product->slug) }}">
+                            <div class="product-name">{{ $product->name }}</div>
+                        </a>
                         <div class="product-price">{{ $product->presentPrice() }}</div>
                     </div>
                 @empty
@@ -66,7 +58,7 @@
             </div> <!-- end products -->
 
             <div class="spacer"></div>
-{{--            {{ $products->appends(request()->input())->links() }}--}}
+            {{ $products->appends(request()->input())->links() }}
         </div>
     </div>
 

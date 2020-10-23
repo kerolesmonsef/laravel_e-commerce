@@ -1,4 +1,5 @@
 <ul>
+    <li><a href="{{ route('product.index') }}">Producs</a></li>
     @guest
         <li><a href="{{ route('register') }}">Sign Up</a></li>
         <li><a href="{{ route('login') }}">Login</a></li>

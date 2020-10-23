@@ -22,7 +22,13 @@
                 <div class="top-nav container">
                     <div class="top-nav-left">
                         <div class="logo">Ecommerce</div>
-{{--                        {{ menu('main', 'partials.menus.main') }}--}}
+                        <ul>
+                            <li>
+                                <a href="{{ route('product.index') }}">
+                                    Shop
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                     <div class="top-nav-right">
 {{--                        @include('partials.menus.main-right')--}}
@@ -61,7 +67,7 @@
                     <div class="products text-center">
                         @foreach ($products as $product)
                             <div class="product">
-                                <a href="{{ route('product.show', $product->slug) }}"><img src="/img/macbook-pro.png" alt="product"></a>
+                                <a href="{{ route('product.show', $product->slug) }}"><img src="{{ asset('img/'.$product->image) }}" alt="product"></a>
                                 <a href="{{ route('product.show', $product->slug) }}"><div class="product-name">{{ $product->name }}</div></a>
                                 <div class="product-price">{{ $product->presentPrice() }}</div>
                             </div>
@@ -70,7 +76,7 @@
                     </div> <!-- end products -->
 
                     <div class="text-center button-container">
-{{--                        <a href="{{ route('product.index') }}" class="button">View more products</a>--}}
+                        <a href="{{ route('product.index') }}" class="button">View more products</a>
                     </div>
 
                 </div> <!-- end container -->

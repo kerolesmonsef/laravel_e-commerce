@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\CartController;
+use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\LandingPageController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\SaveForLaterController;
@@ -22,8 +23,14 @@ Route::resource("product", ProductController::class);
 Route::resource("cart", CartController::class);
 Route::post('/cart/switchToSaveForLater/{rowID}', [CartController::class, 'switchToSaveForLater'])->name('cart.switchToSaveForLater');
 
-Route::delete('/saveForLater/{product}', [SaveForLaterController::class, 'destroy'])->name('saveForLater.destroy');
 Route::post('/saveForLater/switchToCart/{product}', [SaveForLaterController::class, 'switchToCart'])->name('saveForLater.switchToCart');
+
+Route::group(['middleware' => 'auth'], function () {
+    Route::get("checkout", [CheckoutController::class, 'index'])->name('checkout.index');
+    Route::get('checkout/redirect/success', [CheckoutController::class, 'success'])->name('checkout.redirect.success');
+    Route::get('checkout/redirect/fail', [CheckoutController::class, 'fail'])->name('checkout.redirect.fail');
+
+});
 
 
 Auth::routes();

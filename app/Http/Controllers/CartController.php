@@ -87,7 +87,7 @@ class CartController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param Product $product
+     * @param $row_id
      * @return \Illuminate\Http\Response
      * @throws \Illuminate\Validation\ValidationException
      */
@@ -115,7 +115,8 @@ class CartController extends Controller
      */
     public function destroy($id)
     {
-        Cart::remove($id);
+        $type = request('type', 'default');
+        Cart::instance($type)->remove($id);
 
         return back()->with('success_message', 'Item has been removed!');
     }
