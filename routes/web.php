@@ -29,7 +29,6 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get("checkout", [CheckoutController::class, 'index'])->name('checkout.index');
     Route::get('checkout/redirect/success', [CheckoutController::class, 'success'])->name('checkout.redirect.success');
     Route::get('checkout/redirect/fail', [CheckoutController::class, 'fail'])->name('checkout.redirect.fail');
-
 });
 
 

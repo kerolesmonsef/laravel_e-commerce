@@ -66,8 +66,8 @@ class CheckoutController extends Controller
         }
 
         $details = new Details();
-        $details->setTax(Cart::tax())
-            ->setSubtotal(Cart::subtotal());
+        $details->setTax(Cart::tax(null,null,''))
+            ->setSubtotal(Cart::subtotal(null,null,''));
 
         $amount = new Amount();
         $amount

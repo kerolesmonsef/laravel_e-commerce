@@ -2,12 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="da82dd02-c5a9-4608-be21-4395e8fe85cf" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/laravel_e-commerce.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel_e-commerce.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/helpers.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/cart.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cart.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/might-like.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/might-like.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/product.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/product.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/products.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CheckoutController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CheckoutController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hooks/hooks.json" beforeDir="false" afterPath="$PROJECT_DIR$/hooks/hooks.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/landing-page.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/landing-page.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/menus/main-right.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/menus/main-right.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/nav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/nav.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,6 +168,8 @@
       <path value="$PROJECT_DIR$/vendor/larapack/doctrine-support" />
       <path value="$PROJECT_DIR$/vendor/larapack/hooks" />
       <path value="$PROJECT_DIR$/vendor/intervention/image" />
+      <path value="$PROJECT_DIR$/vendor/test-hook/src" />
+      <path value="$PROJECT_DIR$/vendor/test-hook/.git" />
     </include_path>
   </component>
   <component name="ProjectId" id="1j0YAovip7N2HyignPa1f7fiHlM" />
@@ -176,7 +183,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app" />
+    <property name="last_opened_file_path" value="C:/wamp64/www/CashLK-Merchant-Web" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -206,7 +213,7 @@
       <workItem from="1602942389876" duration="26665000" />
       <workItem from="1603022463847" duration="538000" />
       <workItem from="1603057361750" duration="2329000" />
-      <workItem from="1603390907195" duration="21016000" />
+      <workItem from="1603390907195" duration="32592000" />
     </task>
     <servers />
   </component>
@@ -222,17 +229,17 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="121" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1603406456551" />
-    <state x="463" y="121" key="FileChooserDialogImpl" timestamp="1603393393691">
+    <state x="463" y="121" key="FileChooserDialogImpl" timestamp="1603563641937">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="121" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1603393393691" />
-    <state x="390" y="120" width="709" height="488" key="find.popup" timestamp="1603452075866">
+    <state x="463" y="121" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1603563641937" />
+    <state x="390" y="120" width="709" height="488" key="find.popup" timestamp="1603537015432">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="390" y="120" width="709" height="488" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1603452075866" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1603451766780">
+    <state x="390" y="120" width="709" height="488" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1603537015432" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1603544168578">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1603451766780" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1603544168578" />
   </component>
 </project>

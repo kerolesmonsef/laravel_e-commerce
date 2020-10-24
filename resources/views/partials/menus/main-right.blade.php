@@ -1,5 +1,4 @@
 <ul>
-    <li><a href="{{ route('product.index') }}">Producs</a></li>
     @guest
         <li><a href="{{ route('register') }}">Sign Up</a></li>
         <li><a href="{{ route('login') }}">Login</a></li>
@@ -19,11 +18,8 @@
             {{ csrf_field() }}
         </form>
     @endguest
-    <li><a href=" {{route('cart.index') }}">Cart
-            @if (Cart::instance('default')->count() > 0)
-                <span class="cart-count"><span>{{ Cart::instance('default')->count() }}</span></span>
-            @endif
-        </a></li>
+
+
     {{-- @foreach($items as $menu_item)
         <li>
             <a href="{{ $menu_item->link() }}">
