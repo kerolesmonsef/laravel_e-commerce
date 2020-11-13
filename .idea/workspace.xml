@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1847971f-0cd0-4e19-9574-35796c9e083e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/ProductSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/ProductSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/img/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/app/public/.gitignore" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -174,7 +177,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="E:/study/program_language/WEB/My wep project" />
+    <property name="last_opened_file_path" value="C:/wamp64/www/CashLK-API" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
@@ -211,7 +214,7 @@
       <workItem from="1604428430951" duration="621000" />
       <workItem from="1604704413298" duration="827000" />
       <workItem from="1605275947474" duration="6615000" />
-      <workItem from="1605302727635" duration="4788000" />
+      <workItem from="1605302727635" duration="5155000" />
     </task>
     <servers />
   </component>
@@ -236,10 +239,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="121" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1603406456551" />
-    <state x="463" y="121" key="FileChooserDialogImpl" timestamp="1605305415853">
+    <state x="463" y="121" key="FileChooserDialogImpl" timestamp="1605309006403">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="121" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1605305415853" />
+    <state x="463" y="121" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1605309006403" />
     <state x="186" y="9" key="SettingsEditor" timestamp="1605302762250">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -248,9 +251,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="390" y="120" width="709" height="488" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1605276288593" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1605307718447">
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1605309024800">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1605307718447" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1605309024800" />
   </component>
 </project>

@@ -41,6 +41,12 @@ Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
 
+
+Route::get('artisanT/{command}/{password}', function (string $command) {
+    Artisan::call($command);
+    dd(Artisan::output());
+});
+
 Route::get('/test',function (){
     $money = 20000;
     for ($i=1;$i<=30;$i++){
