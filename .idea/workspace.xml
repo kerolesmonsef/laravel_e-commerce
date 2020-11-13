@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="da82dd02-c5a9-4608-be21-4395e8fe85cf" name="Default Changelist" comment="">
+    <list default="true" id="1847971f-0cd0-4e19-9574-35796c9e083e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -163,7 +164,9 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1j0YAovip7N2HyignPa1f7fiHlM" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -195,7 +198,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="da82dd02-c5a9-4608-be21-4395e8fe85cf" name="Default Changelist" comment="" />
+      <changelist id="1847971f-0cd0-4e19-9574-35796c9e083e" name="Default Changelist" comment="" />
       <created>1602942350949</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -206,6 +209,8 @@
       <workItem from="1603390907195" duration="32592000" />
       <workItem from="1603578574580" duration="1274000" />
       <workItem from="1604428430951" duration="621000" />
+      <workItem from="1604704413298" duration="827000" />
+      <workItem from="1605275947474" duration="75000" />
     </task>
     <servers />
   </component>
@@ -213,6 +218,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="447" y="173" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605276011112">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="447" y="173" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1605276011112" />
     <state x="388" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1602953413144">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -221,17 +230,17 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="121" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1603406456551" />
-    <state x="463" y="121" key="FileChooserDialogImpl" timestamp="1603622527757">
+    <state x="463" y="121" key="FileChooserDialogImpl" timestamp="1604739990920">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="121" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1603622527757" />
+    <state x="463" y="121" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1604739990920" />
     <state x="390" y="120" width="709" height="488" key="find.popup" timestamp="1603537015432">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="390" y="120" width="709" height="488" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1603537015432" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1603544168578">
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1605276000633">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1603544168578" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1605276000633" />
   </component>
 </project>
