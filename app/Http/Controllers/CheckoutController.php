@@ -94,7 +94,10 @@ class CheckoutController extends Controller
 
         try {
             $payment->create($this->appContext);
-        } catch (\Exception $e) {
+        } catch (PayPalConnectionException $e) {
+            dump($e->getCode());
+            dump($e->getData());
+            dd($e->getMessage());
             return redirect()->back()->withErrors($e->getMessage());
         }
         $payment_link = $payment->getApprovalLink();

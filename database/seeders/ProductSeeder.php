@@ -17,13 +17,14 @@ class ProductSeeder extends Seeder
         // Laptops
         for ($i=1; $i <= 30; $i++) {
             Product::create([
-                'name' => 'Laptop '.$i,
-                'slug' => 'laptop-'.$i,
-                'details' => [13,14,15][array_rand([13,14,15])] . ' inch, ' . [1, 2, 3][array_rand([1, 2, 3])] .' TB SSD, 32GB RAM',
+                'name' => 'Laptop ' . $i,
+                'slug' => 'laptop-' . $i,
+                'details' => [13, 14, 15][array_rand([13, 14, 15])] . ' inch, ' . [1, 2, 3][array_rand([1, 2, 3])] . ' TB SSD, 32GB RAM',
                 'price' => rand(149999, 249999),
-                'description' =>'Lorem '. $i . ' ipsum dolor sit amet, consectetur adipisicing elit. Ipsum temporibus iusto ipsa, asperiores voluptas unde aspernatur praesentium in? Aliquam, dolore!',
-                'image' => 'products/dummy/laptop-'.$i.'.jpg',
+                'description' => 'Lorem ' . $i . ' ipsum dolor sit amet, consectetur adipisicing elit. Ipsum temporibus iusto ipsa, asperiores voluptas unde aspernatur praesentium in? Aliquam, dolore!',
+                'image' => 'products/dummy/laptop-' . $i . '.jpg',
                 'images' => '["products\/dummy\/laptop-2.jpg","products\/dummy\/laptop-3.jpg","products\/dummy\/laptop-4.jpg"]',
+                'quantity' => rand(20, 50),
             ])->categories()->attach(1);
         }
 
@@ -41,6 +42,7 @@ class ProductSeeder extends Seeder
                 'description' => 'Lorem ' . $i . ' ipsum dolor sit amet, consectetur adipisicing elit. Ipsum temporibus iusto ipsa, asperiores voluptas unde aspernatur praesentium in? Aliquam, dolore!',
                 'image' => 'products/dummy/desktop-'.$i.'.jpg',
                 'images' => '["products\/dummy\/laptop-2.jpg","products\/dummy\/laptop-3.jpg","products\/dummy\/laptop-4.jpg"]',
+                'quantity' => rand(20, 50),
             ])->categories()->attach(2);
         }
 
@@ -54,6 +56,7 @@ class ProductSeeder extends Seeder
                 'description' => 'Lorem ' . $i . ' ipsum dolor sit amet, consectetur adipisicing elit. Ipsum temporibus iusto ipsa, asperiores voluptas unde aspernatur praesentium in? Aliquam, dolore!',
                 'image' => 'products/dummy/phone-'.$i.'.jpg',
                 'images' => '["products\/dummy\/laptop-2.jpg","products\/dummy\/laptop-3.jpg","products\/dummy\/laptop-4.jpg"]',
+                'quantity' => rand(20, 50),
             ])->categories()->attach(3);
         }
 
@@ -67,6 +70,7 @@ class ProductSeeder extends Seeder
                 'description' => 'Lorem ' . $i . ' ipsum dolor sit amet, consectetur adipisicing elit. Ipsum temporibus iusto ipsa, asperiores voluptas unde aspernatur praesentium in? Aliquam, dolore!',
                 'image' => 'products/dummy/tablet-'.$i.'.jpg',
                 'images' => '["products\/dummy\/laptop-2.jpg","products\/dummy\/laptop-3.jpg","products\/dummy\/laptop-4.jpg"]',
+                'quantity' => rand(20, 50),
             ])->categories()->attach(4);
         }
 
@@ -80,6 +84,7 @@ class ProductSeeder extends Seeder
                 'description' => 'Lorem ' . $i . ' ipsum dolor sit amet, consectetur adipisicing elit. Ipsum temporibus iusto ipsa, asperiores voluptas unde aspernatur praesentium in? Aliquam, dolore!',
                 'image' => 'products/dummy/tv-'.$i.'.jpg',
                 'images' => '["products\/dummy\/laptop-2.jpg","products\/dummy\/laptop-3.jpg","products\/dummy\/laptop-4.jpg"]',
+                'quantity' => rand(20, 50),
             ])->categories()->attach(5);
         }
 
@@ -93,6 +98,7 @@ class ProductSeeder extends Seeder
                 'description' => 'Lorem ' . $i . ' ipsum dolor sit amet, consectetur adipisicing elit. Ipsum temporibus iusto ipsa, asperiores voluptas unde aspernatur praesentium in? Aliquam, dolore!',
                 'image' => 'products/dummy/camera-'.$i.'.jpg',
                 'images' => '["products\/dummy\/laptop-2.jpg","products\/dummy\/laptop-3.jpg","products\/dummy\/laptop-4.jpg"]',
+                'quantity' => rand(20, 50),
             ])->categories()->attach(6);
         }
 
@@ -106,6 +112,7 @@ class ProductSeeder extends Seeder
                 'description' => 'Lorem ' . $i . ' ipsum dolor sit amet, consectetur adipisicing elit. Ipsum temporibus iusto ipsa, asperiores voluptas unde aspernatur praesentium in? Aliquam, dolore!',
                 'image' => 'products/dummy/appliance-'.$i.'.jpg',
                 'images' => '["products\/dummy\/laptop-2.jpg","products\/dummy\/laptop-3.jpg","products\/dummy\/laptop-4.jpg"]',
+                'quantity' => rand(20, 50),
             ])->categories()->attach(7);
         }
 
